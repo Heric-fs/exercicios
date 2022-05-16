@@ -20,7 +20,7 @@ namespace exercicio4
             N3 = Convert.ToDouble(Console.ReadLine());
             media = (N1 + N2 + N3) / 3;
 
-            Console.WriteLine("A média é: "+media);
+            Console.WriteLine("A média é "+media);
 
             maior = N1;
 

@@ -31,7 +31,7 @@ namespace trabalho1
             }
             else
             {
-                Console.WriteLine(" É uma cnsoante");
+                Console.WriteLine(" É uma consoante");
             }
         }
     }
