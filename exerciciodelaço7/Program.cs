@@ -12,7 +12,7 @@ namespace exerciciodelaço7
                 string[] numeroContas = new string[5];
                 double[] saldoContas = new double[5];
 
-                //pegando as contas dos usuários e os saldos das mesmas;
+               
                 for (int i = 0; i < 5; i++)
                 {
                     Console.WriteLine("Insira o código da conta " + i);
@@ -21,7 +21,7 @@ namespace exerciciodelaço7
                     saldoContas[i] = Convert.ToDouble(Console.ReadLine());
                 }
 
-                //mostrando o menu na tela e pegando a opção do usuário;
+                
 
                 Console.WriteLine("Insira a opcao que deseja:");
                 Console.WriteLine("1-Sacar");
@@ -68,8 +68,7 @@ namespace exerciciodelaço7
                                 double valorDeposito = Convert.ToDouble(Console.ReadLine());
                                 saldoContas[i] = saldoContas[i] + valorDeposito;
                                 Console.WriteLine("Valor depositado.");
-                                //ou assim:
-                                //saldoContas[i] += valorDeposito;
+
                             }
                         }
                     }
@@ -91,14 +90,14 @@ namespace exerciciodelaço7
                         {
                             for (int i = 0; i < 5; i++)
                             {
-                                //encontra a conta origem e guarda a conta, a referência dentro do vetor e o saldo;
+                                
                                 if (contaOrigemTransfer == numeroContas[i])
                                 {
                                     Console.WriteLine("Conta origem encontrada.");
                                     contaOrigemEncontrada = numeroContas[i];
                                     posicaoOrigem = i;
                                 }
-                                //procura a conta destino e guarda a conta, a referência dentro do vetor e o saldo;
+                                
                                 if (contaDestinoTransfer == numeroContas[i])
                                 {
                                     Console.WriteLine("Conta destino encontrada.");
@@ -137,16 +136,7 @@ namespace exerciciodelaço7
                     opcao = Convert.ToInt32(Console.ReadLine());
                 }
 
-                //int contadorContas = Convert.ToInt32(Console.ReadLine());
-                //int j = 0;
-                //while (j < contadorContas)
-                //{
-                //    Console.WriteLine("Insira o código da conta " + j);
-                //    numeroContas[j] = Console.ReadLine();
-                //    Console.WriteLine("Insira o saldo da conta " + j);
-                //    saldoContas[j] = Convert.ToDouble(Console.ReadLine());
-                //    j++;
-                //}
+
             }
         }
         enum Operacao
