@@ -25,7 +25,7 @@ namespace trabalho2_2
 
             }
 
-            Console.WriteLine("sempre lidando flexe, acustumando com foto, ando fazendo dinheiro, mais nuca pedendo o foco, quem nasceu pra ser patrao nuca vai ser funsonario ");
+            
         }
     }
 }

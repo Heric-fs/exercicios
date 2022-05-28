@@ -7,7 +7,7 @@ namespace Trabalho2_1
         static void Main(string[] args)
         {
             double[] entrada = new double[10];
-            double iverso;
+            double inverso;
 
             for (int i = 0; i < 10; i++)
             {
