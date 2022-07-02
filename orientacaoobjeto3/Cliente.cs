@@ -6,6 +6,10 @@ namespace orientacaoobjeto3
 {
     public class Cliente
     {
+        internal object Endereco;
+        internal string Codigo;
+        private object endereco1;
+
         public string Nome { get; set; }
         public string Cpf { get; set; }
         public string Endereço { get; set; }
@@ -18,6 +22,11 @@ namespace orientacaoobjeto3
         }
         public Cliente()
         {
+        }
+
+        public Cliente(string nome, string cpf, string endereco, object endereco1) : this(nome, cpf, endereco)
+        {
+            this.endereco1 = endereco1;
         }
 
         class Program
@@ -38,7 +47,8 @@ namespace orientacaoobjeto3
 
 
             }
+        
         }
-
+       
     } 
 }

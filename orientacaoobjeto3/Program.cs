@@ -4,8 +4,12 @@ namespace orientacaoobjeto3
 {
     public class Vendedor
     {
+        internal object CodigoCracha;
+        internal string Codigo;
+
         public string Nome { get; set; }
         public string Cracha { get; set; }
+      
   
         public Vendedor(string nome, string cracha)
         {
@@ -16,6 +20,11 @@ namespace orientacaoobjeto3
         public Vendedor()
         {
         }
+
+        public Vendedor(string nome, string cracha, object codigoCracha) : this(nome, cracha)
+        {
+        }
+
         class Program
         {
             static void Main(string[] args)
